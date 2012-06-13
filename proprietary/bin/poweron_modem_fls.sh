@@ -79,11 +79,11 @@ cd ${work_dir}
 IMCdownload -V0x1130 -X0 -x800 -y30 -z50
 
 #
-# loop until /dev/ttyACM0 is available (retry 10 seconds)
+# loop until /dev/ttyACM0 is available (retry 20 seconds)
 #
 /system/bin/log -p e -t MODEM "try to find /dev/ttyACM0..."
 count=0
-for count in 1 2 3 4 5 6 7 8 9 10
+for count in 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
 do
 	if ls /dev/ttyACM0 2>&1 > /dev/null ; then
 		echo "ttyACM0 found!!"
@@ -96,10 +96,10 @@ do
 		echo "$count Waiting for /dev/ttyACM0, before start gsmmux"
 	fi
 done
-# check if ttyACM0 is not found in 10 seconds
+# check if ttyACM0 is not found in 20 seconds
 case $count in
-	"10")
-		echo "eq 10, ttyACM0 not found!!!"
+	"20")
+		echo "eq 20, ttyACM0 not found!!!"
 		echo main > /sys/power/wake_unlock
 		exit 1
 		;;
