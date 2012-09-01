@@ -8,8 +8,6 @@ Injected_dir=/data/modem_work/
 mkdir ${work_dir} -p 2> /dev/null
 echo main > /sys/power/wake_lock
 
-malog_status=`getprop persist.radio.matrace.enable`
-
 # Check if /rca mounted
 if ls /rca 2>&1 /dev/null ; then
 /system/bin/log -p e -t MODEM "/rca folder mounted."
@@ -60,19 +58,8 @@ sync
 #
 # insmod cdc-acm, run IMCdownload
 #
-#set the different channel number when malog enabled.
-
-/system/bin/log -p i -t MODEM "Checking malog_status $malog_status"
-case $malog_status in
-	"1")
-		/system/bin/log -p i -t MODEM "insmod /system/lib/modules/cdc-acm.ko 2"
-		insmod /system/lib/modules/cdc-acm.ko max_intfs=2
-		;;
-	*)
 		/system/bin/log -p i -t MODEM "insmod /system/lib/modules/cdc-acm.ko  1"
 		insmod /system/lib/modules/cdc-acm.ko max_intfs=1
-		;;
-esac
 
 /system/bin/log -p e -t MODEM "IMCdownload -V0x1130 -X0 -x800 -y30 -z50"
 cd ${work_dir}
@@ -113,14 +100,5 @@ esac
 echo "/dev/ttyACM0 found, start gsm0710mux"
 start gsm0710mux
 # raw ip net
-/system/bin/log -p i -t MODEM "Checking malog_status for raw_ip_net $malog_status"
-case $malog_status in
-	"1")
 		/system/bin/log -p e -t MODEM "insmod /system/lib/modules/raw_ip_net.ko 2"
 		insmod /system/lib/modules/raw_ip_net.ko max_intfs=2
-		;;
-	*)
-		/system/bin/log -p e -t MODEM "insmod /system/lib/modules/raw_ip_net.ko 3"
-		insmod /system/lib/modules/raw_ip_net.ko max_intfs=3
-		;;
-esac

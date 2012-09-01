@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/cplc_main:/system/bin/cplc_main \
     $(LOCAL_PATH)/proprietary/bin/ewtzmud:/system/bin/ewtzmud \
     $(LOCAL_PATH)/proprietary/bin/htcbatt:/system/bin/htcbatt \
+    $(LOCAL_PATH)/proprietary/bin/initial_regdom.sh:/system/bin/initial_regdom.sh \
     $(LOCAL_PATH)/proprietary/bin/InjectionTool:/system/bin/InjectionTool \
     $(LOCAL_PATH)/proprietary/bin/gsm0710muxd:/system/bin/gsm0710muxd \
     $(LOCAL_PATH)/proprietary/bin/GPSCConfigFile.cfg:/system/bin/GPSCConfigFile.cfg \
@@ -34,6 +35,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/uim-sysfs:/system/bin/uim-sysfs \
     $(LOCAL_PATH)/proprietary/bin/patch-X.0.ce:/system/bin/patch-X.0.ce \
     $(LOCAL_PATH)/proprietary/bin/poweron_modem_fls.sh:/system/bin/poweron_modem_fls.sh \
+    $(LOCAL_PATH)/proprietary/bin/rilposd:/system/bin/rilposd \
     $(LOCAL_PATH)/proprietary/bin/RXN_IntApp:/system/bin/RXN_IntApp
 
 PRODUCT_COPY_FILES += \
@@ -60,11 +62,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libhtcsurfaces.so:/system/lib/libhtcsurfaces.so \
     $(LOCAL_PATH)/proprietary/lib/libgpsservices.so:/system/lib/libgpsservices.so \
     $(LOCAL_PATH)/proprietary/lib/libgps.so:/system/lib/libgps.so \
-    $(LOCAL_PATH)/proprietary/lib/libmcphalgps.so:/system/lib/libmcphalgps.so \
     $(LOCAL_PATH)/proprietary/lib/libmllite.so:/system/lib/libmllite.so \
     $(LOCAL_PATH)/proprietary/lib/libmlplatform.so:/system/lib/libmlplatform.so \
     $(LOCAL_PATH)/proprietary/lib/libmpl.so:/system/lib/libmpl.so \
     $(LOCAL_PATH)/proprietary/lib/libmpl_jni.so:/system/lib/libmpl_jni.so \
+    $(LOCAL_PATH)/proprietary/lib/libmcphalgps.so:/system/lib/libmcphalgps.so \
     $(LOCAL_PATH)/proprietary/lib/libnvapputil.so:/system/lib/libnvapputil.so \
     $(LOCAL_PATH)/proprietary/lib/libnvasfparserhal.so:/system/lib/libnvasfparserhal.so \
     $(LOCAL_PATH)/proprietary/lib/libnvaviparserhal.so:/system/lib/libnvaviparserhal.so \
@@ -117,6 +119,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libOlaEngine.so:/system/lib/libOlaEngine.so \
     $(LOCAL_PATH)/proprietary/lib/libolaworks.so:/system/lib/libolaworks.so \
     $(LOCAL_PATH)/proprietary/lib/libposteffect.so:/system/lib/libposteffect.so \
+    $(LOCAL_PATH)/proprietary/lib/librilpos.so:/system/lib/librilpos.so \
     $(LOCAL_PATH)/proprietary/lib/libscalado.so:/system/lib/libscalado.so \
     $(LOCAL_PATH)/proprietary/lib/libsensors_mpl.so:/system/lib/libsensors_mpl.so \
     $(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:/system/lib/libstagefrighthw.so \
@@ -205,7 +208,13 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/etc/pathconfigfile.txt:/system/etc/pathconfigfile.txt
+    $(LOCAL_PATH)/proprietary/etc/pathconfigfile.txt:/system/etc/pathconfigfile.txt \
+    $(LOCAL_PATH)/proprietary/etc/gps/RXN/license.key:/system/etc/gps/RXN/license.key \
+    $(LOCAL_PATH)/proprietary/etc/gps/RXN/MSLConfig.txt:/system/etc/gps/RXN/MSLConfig.txt \
+    $(LOCAL_PATH)/proprietary/etc/gps/RXN/security.key:/system/etc/gps/RXN/security.key \
+    $(LOCAL_PATH)/proprietary/etc/gps/agps.truststore:/system/etc/gps/agps.truststore \
+    $(LOCAL_PATH)/proprietary/etc/gps/agps.truststore_lab:/system/etc/gps/agps.truststore_lab \
+    $(LOCAL_PATH)/proprietary/etc/gps/tigpsrouter:/system/etc/gps/tigpsrouter
 
 # RIL
 PRODUCT_COPY_FILES += \
@@ -213,7 +222,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/QUO_6260.fls.clean:/system/etc/QUO_6260.fls.clean
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/usr/keylayout/qwerty.kl:/system/usr/keylayout/qwerty.kl
+    $(LOCAL_PATH)/proprietary/usr/keylayout/qwerty.kl:/system/usr/keylayout/qwerty.kl \
+    $(LOCAL_PATH)/proprietary/usr/keylayout/tegra-kbc.kl:/system/usr/keylayout/tegra-kbc.kl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/media/audio/notifications/MessageAlert.ogg:/system/media/audio/notifications/MessageAlert.ogg
