@@ -20,13 +20,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/charging:/system/bin/charging \
     $(LOCAL_PATH)/proprietary/bin/cplc_main:/system/bin/cplc_main \
     $(LOCAL_PATH)/proprietary/bin/ewtzmud:/system/bin/ewtzmud \
+    $(LOCAL_PATH)/proprietary/bin/hdmid:/system/bin/hdmid \
     $(LOCAL_PATH)/proprietary/bin/htcbatt:/system/bin/htcbatt \
     $(LOCAL_PATH)/proprietary/bin/initial_regdom.sh:/system/bin/initial_regdom.sh \
     $(LOCAL_PATH)/proprietary/bin/InjectionTool:/system/bin/InjectionTool \
     $(LOCAL_PATH)/proprietary/bin/gsm0710muxd:/system/bin/gsm0710muxd \
     $(LOCAL_PATH)/proprietary/bin/GPSCConfigFile.cfg:/system/bin/GPSCConfigFile.cfg \
     $(LOCAL_PATH)/proprietary/bin/GpsConfigFile.txt:/system/bin/GpsConfigFile.txt \
-    $(LOCAL_PATH)/proprietary/bin/hdmid:/system/bin/hdmid \
     $(LOCAL_PATH)/proprietary/bin/IMCdownload:/system/bin/IMCdownload \
     $(LOCAL_PATH)/proprietary/bin/make_sec_bin:/system/bin/make_sec_bin \
     $(LOCAL_PATH)/proprietary/bin/mknod:/system/bin/mknod \
@@ -35,7 +35,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/uim-sysfs:/system/bin/uim-sysfs \
     $(LOCAL_PATH)/proprietary/bin/patch-X.0.ce:/system/bin/patch-X.0.ce \
     $(LOCAL_PATH)/proprietary/bin/poweron_modem_fls.sh:/system/bin/poweron_modem_fls.sh \
-    $(LOCAL_PATH)/proprietary/bin/rilposd:/system/bin/rilposd \
     $(LOCAL_PATH)/proprietary/bin/RXN_IntApp:/system/bin/RXN_IntApp
 
 PRODUCT_COPY_FILES += \
@@ -51,7 +50,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/gps.tegra.so:/system/lib/hw/gps.tegra.so \
     $(LOCAL_PATH)/proprietary/lib/hw/gralloc.tegra.so:/system/lib/hw/gralloc.tegra.so \
     $(LOCAL_PATH)/proprietary/lib/hw/hwcomposer.tegra.so:/system/lib/hw/hwcomposer.tegra.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/nfc.endeavoru.so:/system/lib/hw/nfc.endeavoru.so \
     $(LOCAL_PATH)/proprietary/lib/hw/sensors.endeavoru.so:/system/lib/hw/sensors.endeavoru.so \
     $(LOCAL_PATH)/proprietary/lib/libardrv_dynamic.so:/system/lib/libardrv_dynamic.so \
     $(LOCAL_PATH)/proprietary/lib/libasound.so:/system/lib/libasound.so \
@@ -119,7 +117,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libOlaEngine.so:/system/lib/libOlaEngine.so \
     $(LOCAL_PATH)/proprietary/lib/libolaworks.so:/system/lib/libolaworks.so \
     $(LOCAL_PATH)/proprietary/lib/libposteffect.so:/system/lib/libposteffect.so \
-    $(LOCAL_PATH)/proprietary/lib/librilpos.so:/system/lib/librilpos.so \
     $(LOCAL_PATH)/proprietary/lib/libscalado.so:/system/lib/libscalado.so \
     $(LOCAL_PATH)/proprietary/lib/libsensors_mpl.so:/system/lib/libsensors_mpl.so \
     $(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:/system/lib/libstagefrighthw.so \
@@ -200,9 +197,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/soundimage/Sound_SpeakerVR_Recording.txt:system/etc/soundimage/Sound_SpeakerVR_Recording.txt \
     $(LOCAL_PATH)/proprietary/etc/soundimage/Sound_Voice_Recording_AMR.txt:system/etc/soundimage/Sound_Voice_Recording_AMR.txt \
     $(LOCAL_PATH)/proprietary/etc/soundimage/Sound_Voip_Original_BT.txt:system/etc/soundimage/Sound_Voip_Original_BT.txt \
+    $(LOCAL_PATH)/proprietary/etc/soundimage/Sound_Voip_Original_BT_AEC.txt:system/etc/soundimage/Sound_Voip_Original_BT_AEC.txt \
     $(LOCAL_PATH)/proprietary/etc/soundimage/Sound_Voip_Original_HP.txt:system/etc/soundimage/Sound_Voip_Original_HP.txt \
+    $(LOCAL_PATH)/proprietary/etc/soundimage/Sound_Voip_Original_HP_AEC.txt:system/etc/soundimage/Sound_Voip_Original_HP_AEC.txt \
     $(LOCAL_PATH)/proprietary/etc/soundimage/Sound_Voip_Original_REC.txt:system/etc/soundimage/Sound_Voip_Original_REC.txt \
+    $(LOCAL_PATH)/proprietary/etc/soundimage/Sound_Voip_Original_REC_AEC.txt:system/etc/soundimage/Sound_Voip_Original_REC_AEC.txt \
     $(LOCAL_PATH)/proprietary/etc/soundimage/Sound_Voip_Original_SPK.txt:system/etc/soundimage/Sound_Voip_Original_SPK.txt \
+    $(LOCAL_PATH)/proprietary/etc/soundimage/Sound_Voip_Original_SPK_AEC.txt:system/etc/soundimage/Sound_Voip_Original_SPK_AEC.txt \
     $(LOCAL_PATH)/proprietary/etc/AIC3008_REG_DualMic.csv:system/etc/AIC3008_REG_DualMic.csv \
     $(LOCAL_PATH)/proprietary/etc/AIC3008_REG_DualMic_XC.csv:system/etc/AIC3008_REG_DualMic_XC.csv
 
