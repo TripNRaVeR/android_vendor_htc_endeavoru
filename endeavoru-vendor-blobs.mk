@@ -18,11 +18,9 @@
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/akmd:/system/bin/akmd \
     $(LOCAL_PATH)/proprietary/bin/charging:/system/bin/charging \
-    $(LOCAL_PATH)/proprietary/bin/cplc_main:/system/bin/cplc_main \
     $(LOCAL_PATH)/proprietary/bin/ewtzmud:/system/bin/ewtzmud \
     $(LOCAL_PATH)/proprietary/bin/hdmid:/system/bin/hdmid \
     $(LOCAL_PATH)/proprietary/bin/htcbatt:/system/bin/htcbatt \
-    $(LOCAL_PATH)/proprietary/bin/initial_regdom.sh:/system/bin/initial_regdom.sh \
     $(LOCAL_PATH)/proprietary/bin/InjectionTool:/system/bin/InjectionTool \
     $(LOCAL_PATH)/proprietary/bin/gsm0710muxd:/system/bin/gsm0710muxd \
     $(LOCAL_PATH)/proprietary/bin/GPSCConfigFile.cfg:/system/bin/GPSCConfigFile.cfg \
@@ -35,7 +33,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/uim-sysfs:/system/bin/uim-sysfs \
     $(LOCAL_PATH)/proprietary/bin/patch-X.0.ce:/system/bin/patch-X.0.ce \
     $(LOCAL_PATH)/proprietary/bin/poweron_modem_fls.sh:/system/bin/poweron_modem_fls.sh \
-    $(LOCAL_PATH)/proprietary/bin/RXN_IntApp:/system/bin/RXN_IntApp
+    $(LOCAL_PATH)/proprietary/bin/rilposd:/system/bin/rilposd \
+    $(LOCAL_PATH)/proprietary/bin/RXN_IntApp:/system/bin/RXN_IntApp \
+    $(LOCAL_PATH)/proprietary/bin/tf_daemon:/system/bin/tf_daemon
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/egl/libEGL_perfhud.so:/system/lib/egl/libEGL_perfhud.so \
@@ -116,7 +116,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libOlaBase.so:/system/lib/libOlaBase.so \
     $(LOCAL_PATH)/proprietary/lib/libOlaEngine.so:/system/lib/libOlaEngine.so \
     $(LOCAL_PATH)/proprietary/lib/libolaworks.so:/system/lib/libolaworks.so \
+    $(LOCAL_PATH)/proprietary/lib/libpos.so:/system/lib/libpos.so \
     $(LOCAL_PATH)/proprietary/lib/libposteffect.so:/system/lib/libposteffect.so \
+    $(LOCAL_PATH)/proprietary/lib/librilpos.so:/system/lib/librilpos.so \
     $(LOCAL_PATH)/proprietary/lib/libscalado.so:/system/lib/libscalado.so \
     $(LOCAL_PATH)/proprietary/lib/libsensors_mpl.so:/system/lib/libsensors_mpl.so \
     $(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:/system/lib/libstagefrighthw.so \
@@ -222,12 +224,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/Flash_Loader.conf:/system/etc/Flash_Loader.conf \
     $(LOCAL_PATH)/proprietary/etc/QUO_6260.fls.clean:/system/etc/QUO_6260.fls.clean
 
+# KBC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/usr/keylayout/qwerty.kl:/system/usr/keylayout/qwerty.kl \
     $(LOCAL_PATH)/proprietary/usr/keylayout/tegra-kbc.kl:/system/usr/keylayout/tegra-kbc.kl
 
+# Notification
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/media/audio/notifications/MessageAlert.ogg:/system/media/audio/notifications/MessageAlert.ogg
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.notification_sound=MessageAlert.ogg
 
 # NFC
 PRODUCT_COPY_FILES += \
