@@ -18,6 +18,7 @@
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/akmd:/system/bin/akmd \
     $(LOCAL_PATH)/proprietary/bin/charging:/system/bin/charging \
+    $(LOCAL_PATH)/proprietary/bin/cplc_main:/system/bin/cplc_main \
     $(LOCAL_PATH)/proprietary/bin/ewtzmud:/system/bin/ewtzmud \
     $(LOCAL_PATH)/proprietary/bin/hdmid:/system/bin/hdmid \
     $(LOCAL_PATH)/proprietary/bin/htcbatt:/system/bin/htcbatt \
@@ -46,7 +47,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/egl/libGLESv2_tegra.so:/system/lib/egl/libGLESv2_tegra.so \
     $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.tegra.so:/system/lib/hw/audio.primary.tegra.so \
     $(LOCAL_PATH)/proprietary/lib/hw/audio_policy.tegra.so:/system/lib/hw/audio_policy.tegra.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/camera.tegra.so:/system/lib/hw/vendor-camera.tegra.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/camera.tegra.so:/system/lib/hw/camera.tegra.so \
     $(LOCAL_PATH)/proprietary/lib/hw/gps.tegra.so:/system/lib/hw/gps.tegra.so \
     $(LOCAL_PATH)/proprietary/lib/hw/gralloc.tegra.so:/system/lib/hw/gralloc.tegra.so \
     $(LOCAL_PATH)/proprietary/lib/hw/hwcomposer.tegra.so:/system/lib/hw/hwcomposer.tegra.so \
@@ -127,7 +128,6 @@ PRODUCT_COPY_FILES += \
 
 # Firmware
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/etc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
     $(LOCAL_PATH)/proprietary/etc/firmware/fmc_init_1283.1.bts:system/etc/firmware/fmc_init_1283.1.bts \
     $(LOCAL_PATH)/proprietary/etc/firmware/fmc_init_1283.2.bts:system/etc/firmware/fmc_init_1283.2.bts \
     $(LOCAL_PATH)/proprietary/etc/firmware/fm_rx_init_1283.1.bts:system/etc/firmware/fm_rx_init_1283.1.bts \
@@ -143,24 +143,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/etc/firmware/nvrm_avp_be000000.bin:system/etc/firmware/nvrm_avp_be000000.bin \
     $(LOCAL_PATH)/proprietary/etc/firmware/nvrm_avp_e0000000.bin:system/etc/firmware/nvrm_avp_e0000000.bin \
     $(LOCAL_PATH)/proprietary/etc/firmware/nvrm_avp_eff00000.bin:system/etc/firmware/nvrm_avp_eff00000.bin \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_aacdec.axf:/system/etc/firmware/nvmm_aacdec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_adtsdec.axf:/system/etc/firmware/nvmm_adtsdec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_h264dec.axf:/system/etc/firmware/nvmm_h264dec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_jpegdec.axf:/system/etc/firmware/nvmm_jpegdec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_jpegenc.axf:/system/etc/firmware/nvmm_jpegenc.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_manager.axf:/system/etc/firmware/nvmm_manager.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_mp3dec.axf:/system/etc/firmware/nvmm_mp3dec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_mpeg4dec.axf:/system/etc/firmware/nvmm_mpeg4dec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_reference.axf:/system/etc/firmware/nvmm_reference.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_service.axf:/system/etc/firmware/nvmm_service.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_sorensondec.axf:/system/etc/firmware/nvmm_sorensondec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_vc1dec.axf:/system/etc/firmware/nvmm_vc1dec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_wavdec.axf:/system/etc/firmware/nvmm_wavdec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_wmadec.axf:/system/etc/firmware/nvmm_wmadec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_wmaprodec.axf:/system/etc/firmware/nvmm_wmaprodec.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_h264dec2x.axf:/system/etc/firmware/nvmm_h264dec2x.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_vc1dec_2x.axf:/system/etc/firmware/nvmm_vc1dec_2x.axf \
-    $(LOCAL_PATH)/proprietary/etc/firmware/nvmm_mpeg2dec.axf:/system/etc/firmware/nvmm_mpeg2dec.axf \
     $(LOCAL_PATH)/proprietary/etc/firmware/nvavp_vid_ucode.bin:/system/etc/firmware/nvavp_vid_ucode.bin \
     $(LOCAL_PATH)/proprietary/etc/firmware/nvavp_vid_ucode_alt.bin:/system/etc/firmware/nvavp_vid_ucode_alt.bin \
     $(LOCAL_PATH)/proprietary/etc/firmware/TIInit_10.4.27.bts:system/etc/firmware/TIInit_10.4.27.bts \
