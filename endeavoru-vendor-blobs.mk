@@ -21,6 +21,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/cplc_main:/system/bin/cplc_main \
     $(LOCAL_PATH)/proprietary/bin/ewtzmud:/system/bin/ewtzmud \
     $(LOCAL_PATH)/proprietary/bin/hdmid:/system/bin/hdmid \
+    $(LOCAL_PATH)/proprietary/bin/hostapd:/system/bin/hostapd \
     $(LOCAL_PATH)/proprietary/bin/htcbatt:/system/bin/htcbatt \
     $(LOCAL_PATH)/proprietary/bin/InjectionTool:/system/bin/InjectionTool \
     $(LOCAL_PATH)/proprietary/bin/gsm0710muxd:/system/bin/gsm0710muxd \
