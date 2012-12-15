@@ -186,7 +186,7 @@ SNTP_GPSTime_Uncert_Thresh: 3
 
 // How frequent we hit the SNTP server after a failed initial attempt.
 // Value in sec. Min value: 0. Max value: 604800. Default value: 30.
-SNTP_Retry_Period: 30
+SNTP_Retry_Period: 300
 
 // Maximum number of failed retry, before stopping further seed downloads until SNTP_Retry_Timer has elapsed.
 // Min value: 0. Max value: 10. Default value: 3.

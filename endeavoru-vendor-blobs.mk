@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/mknod:/system/bin/mknod \
     $(LOCAL_PATH)/proprietary/bin/navl_server:/system/bin/navl_server \
     $(LOCAL_PATH)/proprietary/bin/nvm_server:/system/bin/nvm_server \
-    $(LOCAL_PATH)/proprietary/bin/uim-sysfs:/system/bin/uim-sysfs \
     $(LOCAL_PATH)/proprietary/bin/patch-X.0.ce:/system/bin/patch-X.0.ce \
     $(LOCAL_PATH)/proprietary/bin/poweron_modem_fls.sh:/system/bin/poweron_modem_fls.sh \
     $(LOCAL_PATH)/proprietary/bin/rilposd:/system/bin/rilposd \
