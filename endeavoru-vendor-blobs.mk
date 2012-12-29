@@ -213,13 +213,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/usr/keylayout/qwerty.kl:/system/usr/keylayout/qwerty.kl \
     $(LOCAL_PATH)/proprietary/usr/keylayout/tegra-kbc.kl:/system/usr/keylayout/tegra-kbc.kl
 
-# Notification
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/media/audio/notifications/MessageAlert.ogg:/system/media/audio/notifications/MessageAlert.ogg
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.notification_sound=MessageAlert.ogg
-
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/firmware/libpn544_fw.so:/system/vendor/firmware/libpn544_fw.so
