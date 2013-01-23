@@ -133,7 +133,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/librilpos.so:/system/lib/librilpos.so \
     $(LOCAL_PATH)/proprietary/lib/libscalado.so:/system/lib/libscalado.so \
     $(LOCAL_PATH)/proprietary/lib/libsensors_mpl.so:/system/lib/libsensors_mpl.so \
-    $(LOCAL_PATH)/proprietary/lib/libstagefrighthw.so:/system/lib/libstagefrighthw.so \
     $(LOCAL_PATH)/proprietary/lib/libsupllocationprovider.so:/system/lib/libsupllocationprovider.so
 
 # Firmware
